@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    float primeira_nota, segunda_nota, terceira_nota;
+    int primeira_nota, segunda_nota, terceira_nota;
     float media;
 
 
@@ -8,15 +8,15 @@ int main() {
 
 
         printf("Digite a sua primeira nota: \n");
-        scanf("%f", &primeira_nota);
+        scanf("%d", &primeira_nota);
 
         printf("Digite a sua segunda nota: \n");
-        scanf("%f", &segunda_nota);
+        scanf("%d", &segunda_nota);
 
         printf("Digite a sua terceira nota: \n");
-        scanf("%f", &terceira_nota);
+        scanf("%d", &terceira_nota);
 
-        media = (primeira_nota + segunda_nota + terceira_nota) /3;
+        media = (float) (primeira_nota + segunda_nota + terceira_nota) /3;
 
         printf("A média das suas notas é: %.3f", media);
 
