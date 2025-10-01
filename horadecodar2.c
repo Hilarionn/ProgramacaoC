@@ -1,5 +1,3 @@
-//fazer um programa que calcule média de notas de um aluno
-
 int main() {
     int primeira_nota, segunda_nota, terceira_nota;
     int media;
@@ -14,7 +12,7 @@ int main() {
         scanf("%d", &terceira_nota);
 
         printf("Ótimo! A média das suas notas é: \n");
-        media = primeira_nota / segunda_nota / terceira_nota;
+        media = (primeira_nota + segunda_nota + terceira_nota) /3;
 
         printf("%d", media);
 
