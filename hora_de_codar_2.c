@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main() {
     int primeira_nota, segunda_nota, terceira_nota;
     int media;
