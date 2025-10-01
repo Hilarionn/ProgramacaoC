@@ -1,9 +1,10 @@
+#include <stdio.h>
 int main() {
     int primeira_nota, segunda_nota, terceira_nota;
     int media;
 
 
-    printf("***Programa de Cálculo de Média*** \n");
+        printf("***Programa de Cálculo de Média*** \n");
 
 
         printf("Digite a sua primeira nota: \n");
