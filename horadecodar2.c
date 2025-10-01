@@ -18,7 +18,7 @@ int main() {
 
         media = (float) (primeira_nota + segunda_nota + terceira_nota) /3;
 
-        printf("A média das suas notas é: %.3f", media);
+        printf("A média das suas notas é: %.2f", media);
 
         
 
