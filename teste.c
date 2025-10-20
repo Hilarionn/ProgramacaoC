@@ -2,16 +2,16 @@
 
 int main() {
 
-    int sucupira;
-    int sacapara;
+    int banana;
+    int laranja;
 
-    sucupira = 10;
-    sacapara = 20;
+    banana = 100;
+    laranja = 20;
 
-    if (sucupira > sacapara) {
-        printf("SUCUPIRA is greater than SACAPARA\n");
+    if (banana >= laranja) {
+        printf("Tem mais banana do que laranja.\n");
     } else {
-        printf("SACAPARA is greater than SUCUPIRA\n");
+        printf("Tem mais laranja do que banana.\n");
     }
 
     return 0;
