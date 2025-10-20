@@ -2,17 +2,17 @@
 
 int main() {
 
-    int idade;
+    int preco1 = 50+50+50;
+    int preco2 = 166;
 
-    printf("Qual é a sua idade?\n");
-    scanf(" %d", &idade);
+if (preco1 > preco2)
+    printf("Preço 1 é maior que preço 2");
 
-
-    printf(" Sua idade é: %d anos\n", idade);
-
-
-    if (idade >= 16) printf("Você já pode votar!\n");
-    else printf("Você ainda não pode votar!\n");
+    else
+    if (preco1 < preco2)
+    printf("Preço 2 é maior que preço 1");
+    else 
+    printf("Os preços são iguais");
 
     return 0;
 }
