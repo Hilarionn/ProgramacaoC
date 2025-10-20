@@ -2,17 +2,17 @@
 
 int main() {
 
-    int banana;
-    int laranja;
+    int idade;
 
-    banana = 100;
-    laranja = 20;
+    printf("Qual é a sua idade?\n");
+    scanf(" %d", &idade);
 
-    if (banana >= laranja) {
-        printf("Tem mais banana do que laranja.\n");
-    } else {
-        printf("Tem mais laranja do que banana.\n");
-    }
+
+    printf(" Sua idade é: %d anos\n", idade);
+
+
+    if (idade >= 16) printf("Você já pode votar!\n");
+    else printf("Você ainda não pode votar!\n");
 
     return 0;
 }
