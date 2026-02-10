@@ -4,6 +4,11 @@ int main() {
     char nome[50];
     char estado[50];
     int decisao;
+    int maca;
+    int laranja;
+maca = 5;
+laranja = 3;
+
 //Introdução
     printf("Bem vindo de volta, magnata!\nComo se sente hoje?\n");
     printf("Sentimos sua falta! \n");
@@ -20,5 +25,8 @@ int main() {
     printf("É bom saber que você está se sentindo assim.\nTemos muito trabalho a fazer, então vamos começar!\n");
     printf("Insira seu nome, meu caro usuário!\n");
     scanf("%s", nome);
+
+    if(maca > laranja) {printf("Você tem mais maçãs do que laranjas"); } else if(maca < laranja) {printf("Você tem mais laranjas do que maçãs!"); } else {printf("Você tem a mesma quantidade de maçãs e de laranjas!");}
+
     return 0;
 }
