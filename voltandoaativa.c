@@ -7,7 +7,7 @@ int main() {
     int maca;
     int laranja;
 maca = 5;
-laranja = 3;
+laranja = 5;
 
 //Introdução
     printf("Bem vindo de volta, magnata!\nComo se sente hoje?\n");
