@@ -66,6 +66,19 @@ if (numero % 2 == 0) {printf("O número é par\n");}
 
 
 //============================ Operadores Lógicos ============================
+/* Os operadores lógicos são: && (E), || (OU) e ! (NÃO) 
+eles funcionam das seguintes maneiras:
+o && retorna verdadeiro se ambas as condições forem verdadeiras
+o || retorna verdadeiro se pelo menos uma das condições for verdadeira
+o ! inverte o valor lógico de uma condição, ou seja, se a condição for verdadeira
+ela se torna falsa, e vice-versa. 
+É como a passagem de corrente em eletrônica*/
+
+//exemplo de código com operadores lógicos:
+if (numero > 0 && numero < 10) {printf("O número é positivo e menor que 10\n");} else {printf("O número é negativo ou maior ou igual a 10\n");}
+if (numero < 0 || numero > 10) {printf("O número é negativo ou maior que 10\n");} else {printf("O número é positivo e menor ou igual a 10\n");}
+if (!(numero > 0)) {printf("O número não é positivo\n");} else {printf("O número é positivo\n");}  
+
 
 
     return 0;
