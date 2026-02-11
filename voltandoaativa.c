@@ -7,7 +7,7 @@ int main() {
     char nome[50];
     char estado[50];
     int decisao, numero, resultado;
-    int maca, laranja, idade;
+    int maca, laranja, idade, a, b;
     float numero1, numero2, altitudegrafica;
 
     // atribuindo valores
@@ -19,7 +19,8 @@ numero2 = 20.3;
 idade = 18;
 altitudegrafica = 36.5;
 numero = 4;
-
+a=5;
+b=10;
 //Introdução
 
     printf("Bem vindo de volta, magnata!\nComo se sente hoje?\n");
@@ -79,7 +80,9 @@ if (numero > 0 && numero < 10) {printf("O número é positivo e menor que 10\n")
 if (numero < 0 || numero > 10) {printf("O número é negativo ou maior que 10\n");} else {printf("O número é positivo e menor ou igual a 10\n");}
 if (!(numero > 0)) {printf("O número não é positivo\n");} else {printf("O número é positivo\n");}  
 
+if (a > b && numero % 2 == 0) {printf("O número é maior que b e é par\n");} else {printf("O número é menor ou igual a b ou é ímpar\n");}
 
+if (a > 0 || b > 0) {printf("Pelo menos um dos números é positivo\n");} else {printf("Nenhum dos números é positivo\n");}
 
     return 0;
 }
