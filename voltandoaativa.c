@@ -63,5 +63,10 @@ if(altitudegrafica != 77.4) {printf("A altitude gráfica é diferente de 77.4");
 resultado = numero % 2;
 if (numero % 2 == 0) {printf("O número é par\n");} 
 
+
+
+//============================ Operadores Lógicos ============================
+
+
     return 0;
 }
