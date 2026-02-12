@@ -7,7 +7,7 @@ int main() {
     char nome[50];
     char estado[50];
     int decisao, numero, resultado;
-    int maca, laranja, idade, a, b;
+    int maca, laranja, banana, idade, a, b;
     float numero1, numero2, altitudegrafica;
 
     // atribuindo valores
@@ -19,6 +19,7 @@ numero2 = 20.3;
 idade = 18;
 altitudegrafica = 36.5;
 numero = 4;
+banana = 5;
 a=5;
 b=10;
 //Introdução
@@ -81,8 +82,32 @@ if (numero < 0 || numero > 10) {printf("O número é negativo ou maior que 10\n"
 if (!(numero > 0)) {printf("O número não é positivo\n");} else {printf("O número é positivo\n");}  
 
 if (a > b && numero % 2 == 0) {printf("O número é maior que b e é par\n");} else {printf("O número é menor ou igual a b ou é ímpar\n");}
-
+if ( a > 0 && b > 0) {printf("Ambos os números são positivos\n");} else {printf("Pelo menos um dos números não é positivo\n");}
 if (a > 0 || b > 0) {printf("Pelo menos um dos números é positivo\n");} else {printf("Nenhum dos números é positivo\n");}
+if (!(a > 0)) {printf("a não é positivo\n");} else {printf("a é positivo\n");}
+//se a variável for zero, irá inverter e ela valerá 1.
 
+
+
+
+
+
+//Condição aninhada
+if (banana > laranja) { if (laranja > maca) {printf("banana é maior que laranja e laranja é maior que maca\n");} else {printf("banana é maior que laranja, mas laranja não é igual a maçã\n");} } else {printf("banana não é maior que laranja\n");}
+
+
+//Estruturas de condições encadeadas
+
+printf("Digita sua idade\n");
+scanf("%d", &idade);
+//Criança < 12 anos
+//Adolescente >= 12 e < 18 anos
+//Adulto >= 18 e < 60 anos
+//Idoso >= 60 anos
+    if(idade < 12){
+        printf("Você é uma criança.\n");
+    } else if (idade >= 12 && idade < 18) {printf("Você é um adolescente!\n");}
+        else if (idade >== 18 && idade < 60) { printf("Você é um adulto!\n");}
+        else if {printf("Você é um idoso!");}
     return 0;
 }
