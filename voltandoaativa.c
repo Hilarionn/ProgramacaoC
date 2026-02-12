@@ -6,9 +6,9 @@ int main() {
 
     char nome[50];
     char estado[50];
-    int decisao, numero, resultado;
+    int decisao, numero, resultado, nota;
     int maca, laranja, banana, idade, a, b;
-    float numero1, numero2, altitudegrafica;
+    float numero1, numero2, altitudegrafica, renda;
 
     // atribuindo valores
 
@@ -109,5 +109,30 @@ scanf("%d", &idade);
     } else if (idade >= 12 && idade < 18) {printf("Você é um adolescente!\n");}
         else if (idade >= 18 && idade < 60) { printf("Você é um adulto!\n");}
         else {printf("Você é um idoso!");}
+
+scanf("%d" ,nota);
+        if(nota >= 90) { printf("Conceito A!\n");}
+            else if (nota >= 80) {printf("Conceito B!\n");}
+            else if (nota >= 70) {printf("Conceito C!\n");}
+            else if (nota >= 60) {printf("Conceito D!\n");}
+            else {printf("Reprovado!");}
+
+
+
+
+printf("Digite sua idade:\n");
+scanf("%d ", &idade);
+printf("Digite sua renda:\n");
+scanf("%f ", &renda);
+
+
+            if (idade <= 18 || idade >= 60 ) {
+                printf("Aceito com relação a idade\n");
+             } else {
+                printf("Você não atende os critérios devido a idade!\n");
+            }
+
+              if (renda <  2000 ) { printf("Você tem direito ao desconto\n");}
+              else { printf("Você não tem direito ao desconto devido a renda!\n");}
     return 0;
 }
