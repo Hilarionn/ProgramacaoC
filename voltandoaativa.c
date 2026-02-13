@@ -110,7 +110,7 @@ scanf("%d", &idade);
         else if (idade >= 18 && idade < 60) { printf("Você é um adulto!\n");}
         else {printf("Você é um idoso!");}
 
-scanf("%d" ,nota);
+scanf("%d" ,&nota);
         if(nota >= 90) { printf("Conceito A!\n");}
             else if (nota >= 80) {printf("Conceito B!\n");}
             else if (nota >= 70) {printf("Conceito C!\n");}
@@ -121,9 +121,9 @@ scanf("%d" ,nota);
 
 
 printf("Digite sua idade:\n");
-scanf("%d ", &idade);
+scanf("%d", &idade);
 printf("Digite sua renda:\n");
-scanf("%f ", &renda);
+scanf("%f", &renda);
 
 
             if (idade <= 18 || idade >= 60 ) {
