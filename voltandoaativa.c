@@ -126,13 +126,22 @@ printf("Digite sua renda:\n");
 scanf("%f", &renda);
 
 
-            if (idade <= 18 || idade >= 60 ) {
-                printf("Aceito com relação a idade\n");
-             } else {
-                printf("Você não atende os critérios devido a idade!\n");
-            }
+           if (idade <= 18 || idade >= 60) {
+    printf("Aceito com relação a idade\n");
 
-              if (renda <  2000 ) { printf("Você tem direito ao desconto\n");}
-              else { printf("Você não tem direito ao desconto devido a renda!\n");}
-    return 0;
+    if (renda < 2000) {
+        printf("Você tem direito ao desconto\n");
+    } else {
+        printf("Você não tem direito ao desconto devido à renda!\n");
+    }
+
+} else {
+    printf("Você não atende os critérios devido à idade!\n");
+}
+
+
+// Testa a primeira condição (idade). Se for falsa, ele nem entra no bloco {}. Então pula direto pro else.
+//O segredo é entender os blocos lógicos
+
+return 0;
 }
