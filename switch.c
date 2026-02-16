@@ -1,6 +1,16 @@
 #include <stdio.h>
 int main(){
  
+
+
+
+
+
+    ///////////////////////////////////////////////////////CHAR/////////////////////////////////////////////////////
+
+
+
+
 //Uso do Switch
 
 /* char variavel;
@@ -31,60 +41,129 @@ scanf("%c", &variavel);
     }
 */
 
+
+///////////////////////////////////////////////////////BANCO/////////////////////////////////////////////////////
+
+
+
+
+/*
 //Definindo variáveis
-int opcao, agencia, conta;
-float saldo, valor;
-saldo = 1000;
-//MENU
+    // Definindo variáveis
+    int opcao, agencia, conta;
+    float saldo = 1000.0; // Inicializado com valor
+    float valor;
 
-printf("Escolha uma opção:\n");
-printf("1. Verificar Saldo\n");
-printf("2. Fazer Depósito\n");
-printf("3. Fazer Saque\n");
-scanf("%d", &opcao);
+    // MENU
+    printf("--- BANCO DIGITAL ---\n");
+    printf("1. Verificar Saldo\n");
+    printf("2. Fazer Deposito\n");
+    printf("3. Fazer Saque\n");
+    printf("Escolha uma opcao: ");
+    scanf("%d", &opcao);
+
+    // Switch Principal
+    switch (opcao) {
+        case 1:
+            printf("\nO seu saldo atual e: R$ %.2f\n", saldo);
+            break;
+
+        case 2:
+            printf("\nDigite o valor do deposito: R$ ");
+            scanf("%f", &valor);
+            printf("Digite a conta: ");
+            scanf("%d", &conta);
+            printf("Digite a agencia: ");
+            scanf("%d", &agencia);
+            
+            saldo += valor; // Atualiza o saldo (opcional)
+            printf("Deposito de R$ %.2f realizado com sucesso!\n", valor);
+            break;
+
+        case 3:
+            printf("\nDigite o valor do saque: R$ ");
+            scanf("%f", &valor);
+            
+            if (valor <= saldo) {
+                printf("Digite a conta: ");
+                scanf("%d", &conta);
+                printf("Saque de R$ %.2f realizado!\n", valor);
+                saldo -= valor; // Atualiza o saldo
+            } else {
+                printf("Saldo insuficiente!\n");
+            }
+            break;
+
+        default:
+            printf("\nOpcao Invalida!\n");
+            break;
+    }
+*/
 
 
-//Switchs
+///////////////////////////////////////////////////////DIA/////////////////////////////////////////////////////
 
+/*
 
+int dia;
+printf("Entre o valor do dia!\n");
+scanf("%i", &dia);
 
-switch (opcao)
-{
+if (dia == 1) {printf("Domingo");
+
+} else if (dia == 2) { printf("Segunda-feira");
+
+} else if (dia == 3) { printf("Terça-feira");
+
+} else if (dia == 4) {printf("Quarta-feira");
+
+} else if (dia == 5) {printf("Quinta-feira");
+
+} else if (dia == 6) {printf("Sexta-feira");
+
+} else {printf("Sábado");}
+
+*/
+
+int dia = 3;
+printf("Entre o valor do dia!\n");
+scanf("%i", &dia);
+
+switch (dia){
+
 case 1:
-    printf("O seu saldo é R$ %2.f\n", saldo);
+printf("Domingo\n");
 break;
 
 case 2:
-    printf("Digite o valor que deseja depositar:\n");
-        scanf("%.2f", &valor);
-    printf("Digite a conta que você deseja depositar:\n");
-        scanf("%d", &conta);
-    printf("Digite agência que você deseja depositar:\n");
-        scanf("%i", &agencia);
-    printf("Depósito de %.2f foi realizado!\n", valor);
+printf("Segunda-feira\n");
 break;
 
-case 3: 
-    printf("Digite o valor para o qual você deseja retirar:\n"); 
-    scanf("%f", &valor); 
+case 3:
+printf("Terça-feira\n");
+break;
 
-    printf("Saque de %.2f foi realizado!\n", valor);
+case 4:
+printf("Quarta-feira\n");
+break;
 
-    printf("Digite a conta que você deseja sacar:\n");
-    scanf("%s", conta); 
+case 5:
+printf("Quinta-feira\n");
+break;
 
-    printf("Digite agência para a qual você deseja sacar:\n");
-    scanf("%i", &agencia);
+case 6:
+printf("Sexta-feira\n");
+break;
 
-    break;
-default:
-printf("Opção Inválida!\n");
+case 7:
+printf("Sábado\n");
+break;
 
+default: printf("Dia inválido!\n");
 
 
 
 
 }
-
     return 0;
 }
