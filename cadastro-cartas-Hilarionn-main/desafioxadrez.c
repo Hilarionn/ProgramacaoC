@@ -11,15 +11,17 @@ for (direita_torre = 0; direita_torre < 5; direita_torre ++ ) {
     }
     else { printf("A torre andou mais uma casa para a direita!\n");}
 }
-printf ("A torre concluiu o movimento, totalizando %d casas!\n", direita_torre);
+printf ("A torre concluiu o movimento, totalizando %d casas para a direita!\n", direita_torre);
 
 
 int cima_bispo, direita_bispo;
-for (cima_bispo && direita_bispo == 0; direita_bispo < 5 && cima_bispo < 5; cima_bispo ++, direita_bispo ++) 
-{
-printf("O bispo andou %d para a direita e %d para cima.\n", direita_bispo, cima_bispo);
+for (cima_bispo = 0; cima_bispo < 5; cima_bispo ++ ) {
+    if (cima_bispo == 0) {
+    printf("O bispo uma casa para cima!\n");
+    }
+    else { printf("O bispo andou mais uma casa para cima!\n");}
 }
-
+printf ("O bispo concluiu o movimento, totalizando %d casas para cima e %d para a direita!\n", cima_bispo, direita_bispo);
 
 
 
