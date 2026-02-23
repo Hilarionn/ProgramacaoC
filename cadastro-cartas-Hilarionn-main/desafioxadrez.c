@@ -36,6 +36,15 @@ movimento_rainha ++;}
 (casas_rainha > movimento_rainha);
 
 printf("A rainha concluiu seu movimento andando %d casas para a esquerda!\n", movimento_rainha);
+    
+
+    for (int i; i <=10; i++) {
+        for (int j; j <= 10; j++) { printf("%d\n", i * j);
+        }
+    }
+
+
+
     return 0;
 }
 
