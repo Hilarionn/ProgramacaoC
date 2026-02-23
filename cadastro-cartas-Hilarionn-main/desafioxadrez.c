@@ -31,15 +31,6 @@ for (diagonal_bispo1qdt = 0; diagonal_bispo1qdt < 5; diagonal_bispo1qdt ++ ) {
 
 }
 
-  /*  for (direita_bispo = 0; direita_bispo < 5; direita_bispo ++ ) {
-    if (direita_bispo == 0) {
-    printf("O bispo uma casa para a direita!\n");
-    }
-    else { printf("O bispo andou mais uma casa para a direita!\n");}
-
-
-}
-    */
 printf ("O bispo concluiu o movimento, totalizando %d casas para cima e %d para a direita! (%d casas na diagonal)!\n", cima_bispo, direita_bispo, diagonal_bispo1qdt);
 
 
