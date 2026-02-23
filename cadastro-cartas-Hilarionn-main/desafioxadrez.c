@@ -38,11 +38,14 @@ movimento_rainha ++;}
 printf("A rainha concluiu seu movimento andando %d casas para a esquerda!\n", movimento_rainha);
     
 
-    for (int i; i <=10; i++) {
-        for (int j; j <= 10; j++) { printf("%d\n", i * j);
+    for (int i = 1; i <=20; i++) { //Para esse código começar a entrar em loop e funcionar, o de dentro tem que ter sido concluído
+        //No caso, executado até atingir a condição proposta. No caso, j <= 10
+        for (int j = 1; j <= 10; j++) { printf("%d\t", i * j); //1,2,3,4,5,6,7,8,9,10 x1 / ....10 x2 / ....10 x3 .... 
+            //J coluna x I linha
         }
+        printf("\n");
     }
-
+printf("Concluiu\n");
 
 
     return 0;
