@@ -5,6 +5,7 @@
 int main() {
 
 int escolhajogador, escolhacomputador;
+
 srand(time(0));
 
 printf("*** Jogo de Jokenpô! ***\n");
