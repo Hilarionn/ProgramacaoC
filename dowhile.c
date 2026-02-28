@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main() {
-    int i = 1;
+    int i = 99999;
 
-    if (i >= 9999) { printf("Você ganhou!");}
+    if (i >= 9999) { printf("Você ganhou!\n");}
     else {
 
     
