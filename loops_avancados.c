@@ -149,7 +149,7 @@ int main() {
    // trianguloLetras();
    // loopDuplo();
   //  loopTernario();
-
+recursivo(5);
 
 
     return 0;
