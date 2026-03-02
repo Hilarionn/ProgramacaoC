@@ -133,6 +133,48 @@ depois desempilha executando o que ficou pendente.
 ================================================================
 */ 
 
+/*
+
+#include <stdio.h>
+
+void contar (int n){
+        if (n <= 5)
+    contar (n + 1);
+       printf("%d\n", n);
+}
+
+int main () {
+    
+    
+    
+    contar(1);
+    
+    
+    /* Olha seu código:
+
+void contar (int n){
+    if (n <= 5)
+        contar (n + 1);
+
+    printf("%d\n", n);
+}
+🧠 O segredo é a ORDEM.
+
+Ele faz duas coisas:
+
+Se for ≤ 5 → chama a função de novo
+
+Depois imprime
+
+⚠️ Ele só imprime depois que termina de chamar todas as outras. 
+    
+    
+ 
+    
+    return 0;
+} 
+
+ */  
 void recursivo(int numero){
     if (numero > 0){
          //printf("%d\n", numero);
