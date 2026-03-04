@@ -16,11 +16,38 @@ int tabuleiro[10][10]={
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 };
-
+//NAVIO 1
 for (int i = 0; i < 3; i++) {
+    //for (int j = 0; j < 3; j++){
 
     tabuleiro[0][0+i] = 3;
+  //  tabuleiro[0+j][0+5] = 3;
+//}
+// NAVIO 2
+
+int linha = 5;
+int coluna = 5;
+
+
 }
+for (int i = 0; i < 10; i++) {
+    for (int j = 0; j <10; j++){
+
+//definindo posições do J
+
+        
+if (tabuleiro[5][5] == 0 && tabuleiro[6][5] == 0 && tabuleiro[7][5] == 0){
+
+    tabuleiro[5][5] = 3;
+        tabuleiro[6][5] = 3;
+        tabuleiro[7][5] = 3;
+}
+    printf("%d\t", tabuleiro[i][j]);
+    }
+    printf("\n");
+}
+
+
 //===========================================================================================================================================
 /* Neste loop, o índice 'i' é usado para percorrer as colunas na mesma linha.
 Como a matriz começa em 0, ao definir 'i' de 0 até 2, o código preenche exatamente três colunas consecutivas na mesma linha.
