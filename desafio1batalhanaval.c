@@ -17,7 +17,7 @@ int tabuleiro[10][10]={
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 };
 //NAVIO 1
-for (int i = 0; i < 3; i++) {
+for (int i = 1; i < 4; i++) {
     //for (int j = 0; j < 3; j++){
 
     tabuleiro[0][0+i] = 3;
@@ -25,8 +25,7 @@ for (int i = 0; i < 3; i++) {
 //}
 // NAVIO 2
 
-int linha = 5;
-int coluna = 5;
+
 
 
 }
