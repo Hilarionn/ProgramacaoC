@@ -41,6 +41,17 @@ if (tabuleiro[5][5] == 0 && tabuleiro[6][5] == 0 && tabuleiro[7][5] == 0){
         tabuleiro[6][5] = 3;
         tabuleiro[7][5] = 3;
 }
+if (tabuleiro[2][2] == 0 && tabuleiro[3][3] == 0 && tabuleiro[4][4] == 0){
+    tabuleiro[2][2] = 3;
+    tabuleiro[3][3] = 3;
+    tabuleiro[4][4] = 3;
+}
+if (tabuleiro[7][2] == 0 && tabuleiro[8][3] == 0 && tabuleiro[9][4] == 0){
+    tabuleiro[7][2] = 3;
+    tabuleiro[8][3] = 3;
+    tabuleiro[9][4] = 3;
+} 
+
     printf("%d\t", tabuleiro[i][j]);
     }
     printf("\n");
