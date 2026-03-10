@@ -73,4 +73,6 @@ else {printf("Você perdeu!\n");}
 
 
 return 0;
-}
+} 
+
+// Adicionar um contador com loop e contador de número par ou impar (ou de vitórias maquina x humano) pra fazer melhor de 3.
