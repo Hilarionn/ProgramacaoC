@@ -19,7 +19,7 @@ struct PAIS{
     char nome[50];
     char cor[10];
     int tropas;
-}
+};
 
 // ------------- Função principal
 
