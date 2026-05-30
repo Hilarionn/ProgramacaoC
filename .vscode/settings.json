@@ -1,3 +1,14 @@
 {
-  "github.copilot.editor.enableAutoCompletions": false
+  "editor.inlineSuggest.enabled": false,
+  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.enable": {
+    "*": false,
+    "c": false,
+    "cpp": false
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.executorMap": {
+    "c": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$workspaceRoot\\.vscode\\run-active-c.ps1\" \"$fullFileName\" \"$workspaceRoot\" \"$fileNameWithoutExt\""
+  }
 }
