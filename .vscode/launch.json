@@ -5,14 +5,14 @@
             "name": "C: executar arquivo ativo",
             "type": "cppdbg",
             "request": "launch",
-            "program": "C:/Users/Micro/Desktop/REPOSI~1/PROGRA~1/bin/${fileBasenameNoExtension}.exe",
+            "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "C:/Users/Micro/Desktop/REPOSI~1/PROGRA~1",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+            "miDebuggerPath": "/usr/bin/gdb",
             "preLaunchTask": "C/C++: gcc compilar arquivo ativo"
         }
     ]
