@@ -6,3 +6,6 @@ for file in src/aulas/*.c src/desafios/*.c src/projetos/*.c; do
     echo "Compilado: $nome"
 done
 echo "Tudo compilado!"
+
+
+#./compilar.sh
