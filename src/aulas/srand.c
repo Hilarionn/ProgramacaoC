@@ -25,7 +25,7 @@ switch (opcao)
   numero_secreto = rand() % 10;
 
   
-  printf("Digite um número de 0 a 9: \n")
+  printf("Digite um número de 0 a 9: \n");
   scanf("%i", &palpite);
   if (numero_secreto == palpite){ printf("Você acertou!"); 
         printf("Numero Secreto: %i\n", numero_secreto);}
