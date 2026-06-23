@@ -100,10 +100,10 @@ if (banana > laranja) { if (laranja > maca) {printf("banana é maior que laranja
 
 printf("Digita sua idade\n");
 scanf("%d", &idade);
-//Criança < 12 anos
+        //Criança < 12 anos
 //Adolescente >= 12 e < 18 anos
-//Adulto >= 18 e < 60 anos
-//Idoso >= 60 anos
+                //Adulto >= 18 e < 60 anos
+            //Idoso >= 60 anos
     if(idade < 12){
         printf("Você é uma criança.\n");
     } else if (idade >= 12 && idade < 18) {printf("Você é um adolescente!\n");}
